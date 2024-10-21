@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Popup Content</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                margin: 0;
-                text-align: center;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+            animation: blink 1s infinite; /* Add blinking animation */
+        }
+        p {
+            color: #4CAF50;
+            margin-top: 10px;
+            animation: blink 1s infinite; /* Add blinking animation */
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1; /* Fully visible */
             }
-            h1 {
-                color: #4CAF50;
+            50% {
+                opacity: 0; /* Invisible */
             }
-            p {
-                margin-top: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <div>
-            <h1>Click to Proceed</h1>
-            <p>click here to show ad</p>
-        </div>
-        <script>
-            (function(s,u,z,p){
-                s.src=u;
-                s.setAttribute('data-zone',z);
-                p.appendChild(s);
-            })(document.createElement('script'),'https://shebudriftaiter.net/tag.min.js',8254472,document.body||document.documentElement);
-        </script>
-    </body>
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Click to Proceed</h1>
+        <p>click here to show ad</p>
+    </div>
+    <script>
+        (function(s,u,z,p){
+            s.src=u;
+            s.setAttribute('data-zone',z);
+            p.appendChild(s);
+        })(document.createElement('script'),'https://shebudriftaiter.net/tag.min.js',8254472,document.body||document.documentElement);
+    </script>
+</body>
 </html>
